@@ -14,7 +14,8 @@ function Header() {
   ];
   const router = useRouter();
   const currentRoute = router.pathname;
-  const currentRouteHasSlides = links.find((link) => link.path === currentRoute).hasSlides;
+  const currentRouteDetails = links.find((link) => link.path === currentRoute);
+  const currentRouteHasSlides = currentRouteDetails && currentRouteDetails.hasSlides;
   const navClasses = classNames("navbar", "navbar-expand-lg", "navbar-light", {
     whitebg: !currentRouteHasSlides || isPageScrolled,
   });
