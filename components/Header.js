@@ -62,7 +62,7 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbars-rs-food">
             <ul className="navbar-nav ml-auto">
               {links.map((link) => (
-                <li className={`nav-item ${link.path === currentRoute ? "active" : ""}`}>
+                <li className={`nav-item ${link.path === currentRoute ? "active" : ""}`} key={link.name}>
                   <Link href={link.path}>
                     <a className="nav-link">{link.name}</a>
                   </Link>
