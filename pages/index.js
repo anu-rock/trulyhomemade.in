@@ -1,65 +1,90 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import SlidesContainer from "../components/SildesContainer";
+import Slide from "../components/Slide";
+import ProductRow from "../components/ProductRow";
+import ContentWithPhoto from "../components/ContentWithPhoto";
+import GalleryContainer from "../components/GalleryContainer";
+import GalleryItem from "../components/GalleryItem";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main>
+      <SlidesContainer name="home">
+        <Slide
+          backgroundImagePath="images/slider-couple-cooking.jpg"
+          backgroundImageAltText=""
+          headingOne="Anybody Can Cook"
+          headingTwo="Tasty Meals"
+          subHeading="Impress your loved ones, friends, or yourself with delicious food in 3 easy steps."
+        />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Slide
+          backgroundImagePath="images/slider-bowls-of-spices.jpg"
+          backgroundImageAltText=""
+          headingOne="100%"
+          headingTwo="Natural Ingredients"
+          subHeading="No artificial flavors. No preservatives."
+        />
+      </SlidesContainer>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      <ProductRow
+        photoPath="images/gravies-scaled.png"
+        photoAltText="Packets of Truly Homemade's all-purpose gravies"
+        title="All-Purpose Gravies"
+        subtitle="Making restaurant-style Indian gravies at home was never easier. 
+          In 3 easy steps, spoil yourself with yummy flavors: just open, mix, and cook. No cutting shutting, no rona dhona. 
+          Impress your friends with Malai Kofta, surprise your wife with Paneer Makhani, or charm your mother with Mushroom Do Pyaza."
+        iconPath="images/veg-icon.png"
+        detailUrl="#"
+        showSeparator={true}
+      />
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      <ProductRow
+        photoOnLeft={false}
+        photoPath="images/gravies-scaled.png"
+        photoAltText="Packets of Truly Homemade's all-purpose gravies"
+        title="Breakfast Mixes"
+        subtitle="'Subah subah wahi boring options?' Treat yourself with super-duper-wooper easy breakfast. Taste bhi, health bhi."
+        iconPath="images/veg-icon.png"
+        detailUrl="#"
+        showSeparator={false}
+      />
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+      <ContentWithPhoto
+        title="And hence began our journey..."
+        content="<p>It all began during the 2020 pandameic. India became home to one of the toughest lockdowns in the world.
+      Restaurants closed down and food deliveries became restricted as a result of a fear of infection from
+      the stubborn virus. Access to tasty food was lost.</p><p>
+      Armed with 5 years of experience in the food industry, we embarked on a mission to make tasty and
+      healthy food accessible again. Hence was born Truly Homemade, a range of ready-to-cook gravies and
+      breakfast mixes. We are driven by only one and only one goal: <strong>Everyone is entitled to good food (tasty + healthy).</strong>
+    </p>"
+        photoImagePath="images/cooking-at-home.jpg"
+        backgroundImagePath="/images/about-bg.jpg"
+        readMoreUrl="/about"
+      />
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+      <GalleryContainer
+        title="Recipes"
+        subtite="Unlock dozens of tasty dishes with Truly Homemade's ready-to-cook options. Give one of these recipes a try."
+      >
+        <GalleryItem
+          imagePath="images/gallery-img-01.jpg"
+          imageThumbPath="images/gallery-img-01.jpg"
+          imageAltText="Gallery Images"
+        />
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <GalleryItem
+          imagePath="images/gallery-img-02.jpg"
+          imageThumbPath="images/gallery-img-02.jpg"
+          imageAltText="Gallery Images"
+        />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        <GalleryItem
+          imagePath="images/gallery-img-03.jpg"
+          imageThumbPath="images/gallery-img-03.jpg"
+          imageAltText="Gallery Images"
+        />
+      </GalleryContainer>
+    </main>
+  );
 }

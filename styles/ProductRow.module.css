@@ -1,0 +1,52 @@
+.product-section-box {
+  padding: 50px 0px;
+}
+
+.product-section-box h2 {
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.product-section-box .separator {
+  margin-top: 50px;
+}
+
+.product-section-box .separator img {
+  width: 300px;
+}
+
+.product-section-box .icon {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.product-section-box .icon img {
+  width: 26px;
+}
+
+/* .product-section-box .product-img {
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-section-box .product-img img {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .product-section-box .product-img:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url(/images/veggies-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: 50% 0;
+    background-size: cover;
+  } */
