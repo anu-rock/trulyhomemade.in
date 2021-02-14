@@ -34,7 +34,7 @@ export default function Home() {
           In 3 easy steps, spoil yourself with yummy flavors: just open, mix, and cook. No cutting shutting, no rona dhona. 
           Impress your friends with Malai Kofta, surprise your wife with Paneer Makhani, or charm your mother with Mushroom Do Pyaza."
         iconPath="images/veg-icon.png"
-        ctaUrl="#"
+        ctaUrl="/gravies"
         showSeparator={true}
       />
 
@@ -45,7 +45,7 @@ export default function Home() {
         title="Breakfast Mixes"
         subtitle="'Subah subah wahi boring options?' Treat yourself with super-duper-wooper easy breakfast. Taste bhi, health bhi."
         iconPath="images/veg-icon.png"
-        ctaUrl="#"
+        ctaUrl="/breakfast"
         showSeparator={false}
       />
 
