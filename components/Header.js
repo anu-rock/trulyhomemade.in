@@ -8,7 +8,7 @@ function Header() {
   const links = [
     { name: "Home", path: "/", hasSlides: true },
     { name: "Instant Gravies", path: "/gravies", hasSlides: false },
-    { name: "Breakfast Mixes", path: "#", hasSlides: false },
+    { name: "Breakfast Mixes", path: "/breakfast", hasSlides: false },
     { name: "About", path: "/about", hasSlides: false },
     { name: "Contact", path: "#", hasSlides: false },
   ];
