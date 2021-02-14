@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 function Footer() {
@@ -17,22 +18,34 @@ function Footer() {
           <div className="col-lg-3 col-md-6">
             <h3>Products</h3>
             <p>
-              <a href="#">Masti Malai (White Gravy)</a>
+              <Link href="/gravies">
+                <a>Masti Malai (White Gravy)</a>
+              </Link>
             </p>
             <p>
-              <a href="#">Shahi Dawat (Yellow Gravy)</a>
+              <Link href="/gravies">
+                <a>Shahi Dawat (Yellow Gravy)</a>
+              </Link>
             </p>
             <p>
-              <a href="#">Makhani Masala (Red Gravy)</a>
+              <Link href="/gravies">
+                <a>Makhani Masala (Red Gravy)</a>
+              </Link>
             </p>
             <p>
-              <a href="#">Multi-Breakfast Mix</a>
+              <Link href="/breakfast">
+                <a>Multi-Breakfast Mix</a>
+              </Link>
             </p>
             <p>
-              <a href="#">Poha Mix</a>
+              <Link href="/breakfast">
+                <a>Poha Mix</a>
+              </Link>
             </p>
             <p>
-              <a href="#">Sambar Mix</a>
+              <Link href="/breakfast">
+                <a>Sambar Mix</a>
+              </Link>
             </p>
           </div>
           <div className="col-lg-3 col-md-6"></div>
