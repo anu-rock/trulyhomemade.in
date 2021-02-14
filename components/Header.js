@@ -7,7 +7,7 @@ function Header() {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
   const links = [
     { name: "Home", path: "/", hasSlides: true },
-    { name: "Gravy Mixes", path: "#", hasSlides: false },
+    { name: "Instant Gravies", path: "/gravies", hasSlides: false },
     { name: "Breakfast Mixes", path: "#", hasSlides: false },
     { name: "About", path: "/about", hasSlides: false },
     { name: "Contact", path: "#", hasSlides: false },

@@ -4,6 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 
+@font-face {
+  font-family: "Bakerie";
+  src: url("/fonts/BakerieSmooth-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Aloja";
+  src: url("/fonts/Aloja-Light.otf") format("truetype");
+}
+
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
@@ -138,6 +148,24 @@ button:focus {
 .form-control::-moz-placeholder {
   color: #2a2a2a;
   opacity: 1;
+}
+
+.page-heading {
+  font-family: Bakerie;
+  padding-top: 150px;
+  font-size: 70px;
+  text-align: center;
+}
+
+.page-heading span {
+  padding: 0 30px 15px 30px;
+  border-bottom: 4px double #aaa;
+}
+
+@media (max-width: 767px) {
+  .page-heading {
+    font-size: 50px;
+  }
 }
 
 /*------------------------------------------------------------------
