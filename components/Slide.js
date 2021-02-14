@@ -15,7 +15,7 @@ function Slide(props) {
                 {props.headingTwo}
               </strong>
             </h1>
-            <p className="m-b-40">{props.subHeading}</p>
+            <p className="m-b-40" dangerouslySetInnerHTML={{ __html: props.subHeading }}></p>
           </div>
         </div>
       </div>

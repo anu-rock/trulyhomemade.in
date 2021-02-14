@@ -15,6 +15,7 @@ function SlidesContainer(props) {
         nav: `.${styles["slides-navigation"]}`,
         container: `.${styles["slides-container"]}`,
         pagination: `.${styles["slides-pagination"]}`,
+        preserve: ".preserve",
       },
     });
 

@@ -14,7 +14,7 @@ export default function Home() {
           backgroundImageAltText=""
           headingOne="Anybody Can Cook"
           headingTwo="Tasty Meals"
-          subHeading="Impress your loved ones, friends, or yourself with delicious food in 3 easy steps."
+          subHeading="Impress your loved ones, friends, or yourself with delicious food in <img class='preserve' src='images/digit-three.png' alt='3' width='40' /> easy steps."
         />
 
         <Slide
@@ -22,7 +22,7 @@ export default function Home() {
           backgroundImageAltText=""
           headingOne="100%"
           headingTwo="Natural Ingredients"
-          subHeading="No artificial flavors. No preservatives."
+          subHeading="✅ No artificial flavors. ✅ No preservatives."
         />
       </SlidesContainer>
 
