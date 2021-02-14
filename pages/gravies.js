@@ -20,7 +20,8 @@ export default function Gravies() {
           In 3 easy steps, spoil yourself with yummy flavors: just open, mix, and cook. No cutting shutting, no rona dhona. 
           Impress your friends with Malai Kofta, surprise your wife with Paneer Makhani, or charm your mother with Mushroom Do Pyaza."
         iconPath="images/veg-icon.png"
-        detailUrl="#"
+        ctaText="Buy now"
+        ctaUrl="#"
         showSeparator={true}
       />
 
@@ -32,7 +33,8 @@ export default function Gravies() {
           In 3 easy steps, spoil yourself with yummy flavors: just open, mix, and cook. No cutting shutting, no rona dhona. 
           Impress your friends with Malai Kofta, surprise your wife with Paneer Makhani, or charm your mother with Mushroom Do Pyaza."
         iconPath="images/veg-icon.png"
-        detailUrl="#"
+        ctaText="Buy now"
+        ctaUrl="#"
         showSeparator={true}
       />
 
@@ -44,7 +46,8 @@ export default function Gravies() {
           In 3 easy steps, spoil yourself with yummy flavors: just open, mix, and cook. No cutting shutting, no rona dhona. 
           Impress your friends with Malai Kofta, surprise your wife with Paneer Makhani, or charm your mother with Mushroom Do Pyaza."
         iconPath="images/veg-icon.png"
-        detailUrl="#"
+        ctaText="Buy now"
+        ctaUrl="#"
         showSeparator={false}
       />
     </main>

@@ -21,9 +21,11 @@ function ProductRow(props) {
               </span>
             )}
             <p>{props.subtitle}</p>
-            <a className="btn btn-lg btn-outline-new-white" href={props.detailUrl}>
-              Know More
-            </a>
+            {props.ctaUrl && (
+              <a className="btn btn-lg btn-outline-new-white" href={props.ctaUrl}>
+                {props.ctaText}
+              </a>
+            )}
           </div>
         </div>
         {props.showSeparator && (
@@ -64,13 +66,15 @@ ProductRow.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   iconPath: PropTypes.string,
-  detailUrl: PropTypes.string,
+  ctaText: PropTypes.string,
+  ctaUrl: PropTypes.string,
   showSeparator: PropTypes.bool,
 };
 
 ProductRow.defaultProps = {
   photoOnLeft: true,
   showSeparator: true,
+  ctaText: "Know More",
 };
 
 export default ProductRow;
