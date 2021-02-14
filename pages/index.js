@@ -27,7 +27,7 @@ export default function Home() {
       </SlidesContainer>
 
       <ProductRow
-        photoPath="images/gravies-scaled.png"
+        photoPath="images/Gravies_Stacked_small.png"
         photoAltText="Packets of Truly Homemade's all-purpose gravies"
         title="All-Purpose Gravies"
         subtitle="Making restaurant-style Indian gravies at home was never easier. 
@@ -40,7 +40,7 @@ export default function Home() {
 
       <ProductRow
         photoOnLeft={false}
-        photoPath="images/gravies-scaled.png"
+        photoPath="images/Breakfast_Stacked_small.png"
         photoAltText="Packets of Truly Homemade's all-purpose gravies"
         title="Breakfast Mixes"
         subtitle="'Subah subah wahi boring options?' Treat yourself with super-duper-wooper easy breakfast. Taste bhi, health bhi."
